@@ -76,6 +76,10 @@ function App() {
               <small>2020 - ONGOING</small>
               <h1>Tomrrowland</h1>
             </div>
+            <div className="title">
+              <small>2020 - ONGOING</small>
+              <h1>Tomrrowland</h1>
+            </div>
           </div>
         </section>
         <section id="section-3"></section>
