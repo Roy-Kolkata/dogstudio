@@ -7,16 +7,22 @@ function App() {
   return (
     <>
       <main>
-        <Canvas style={{
+        <div className="images">
+          <img id='tomorrowland' src="/models/tomorrowland.png" alt="" />
+          <img id='navy-pier' src="/models/navy-pier.png" alt="" />
+          <img id='msi-chicago' src="/models/msi-chicago.png" alt="" />
+          <img id='phone' src="/models/phone.png" alt="" />
+          <img id='kikk' src="/models/kikk.png" alt="" />
+          <img id='kennedy' src="/models/kennedy.png" alt="" />
+          <img id='opera' src="/models/opera.png" alt="" />
+        </div>
+        <Canvas id='canvas-elem' style={{
           height: "100vh",
           width: "100vw",
           position: "fixed",
           top: 0,
           left: 0,
           zIndex: 1,
-          backgroundImage: "url(/models/background-l.png)",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover"
         }}>
           <Dog />
         </Canvas>
@@ -68,21 +74,60 @@ function App() {
         </section>
         <section id="section-2">
           <div className="titles">
-            <div className="title">
+            <div img-title="tomorrowland" className="title">
               <small>2020 - ONGOING</small>
-              <h1>Tomrrowland</h1>
+              <h1>Tomorrowland</h1>
             </div>
-            <div className="title">
-              <small>2020 - ONGOING</small>
-              <h1>Tomrrowland</h1>
+            <div img-title="navy-pier" className="title">
+              <small>2018 - Today</small>
+              <h1>Navy Pier</h1>
             </div>
-            <div className="title">
-              <small>2020 - ONGOING</small>
-              <h1>Tomrrowland</h1>
+            <div img-title="msi-chicago" className="title">
+              <small>2015 - Today</small>
+              <h1>MSI Chicago</h1>
+            </div>
+            <div img-title="phone" className="title">
+              <small>2016</small>
+              <h1>This was Louise's Phone</h1>
+            </div>
+            <div img-title="kikk" className="title">
+              <small>2012 - Today</small>
+              <h1>KIKK Festival 2018</h1>
+            </div>
+            <div img-title="kennedy" className="title">
+              <small>2017</small>
+              <h1>The Kennedy Center</h1>
+            </div>
+            <div img-title="opera" className="title">
+              <small>2016 - ONGOING</small>
+              <h1>Royal Opera of Wallonia</h1>
             </div>
           </div>
         </section>
-        <section id="section-3"></section>
+        <section id="section-3">
+          <div className="top">
+            <div className="left">
+              <h3>We Crafting  <br />
+                emotional<br />
+                experiences aimed <br />
+                at improving <br />
+              results</h3>
+            </div>
+            <div className="right">
+
+            </div>
+          </div>
+        </section>
+        <section id="section-4">
+          <div className="bottom">
+            <div className="left"></div>
+            <div className="right">
+              <p>Dogstudio is a design & technology firm working globally from our offices based in Belgium and Chicago.
+                Our strong focus on producing high quality & emotional brandings, digital products and experiences became a signature.</p>
+              <p>We’re passionate about moving people and solving problems for the likes of Microsoft, The Museum of Science And Industry Of Chicago, The Kennedy Center of Washington, Dragone, Quanta Magazine, and many more.</p>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   )
